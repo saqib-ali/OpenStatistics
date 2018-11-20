@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+
+<!doctype html>
+<html lang='en'>
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta charset='UTF-8'>
+  <title>Open Statistics</title>
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
+ <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js">  </script>
+ <script type="text/javascript">
+ /*
+    Function based on code from
+    https://github.com/mathjax/MathJax/issues/182
+*/
+ function isMathMLNativelySupported(){
+      var hasMathML = false;
+      if (document.createElement) {
+      var div = document.createElement("div");
+      div.style.position = "absolute"; div.style.top = div.style.left = 0;
+      div.style.visibility = "hidden"; div.style.width = div.style.height = "auto";
+      div.style.fontFamily = "serif"; div.style.lineheight = "normal";
+      div.innerHTML = "<math><mfrac><mi>xx</mi><mi>yy</mi></mfrac></math>";
+      $("body").append(div);
+      hasMathML = div.offsetHeight > div.offsetWidth;
+    }
+      return hasMathML;
+  }
+  
+  function setupMathjaxIfNeeded(){
+  	if( isMathMLNativelySupported() ) 
+		return true;
+    var scriptMathJax = document.createElement("script");
+    scriptMathJax.type = "text/javascript";
+    scriptMathJax.src  = "http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    $("head").append(scriptMathJax);
+    return false;
+  }
+  $( document ).ready( function(){setupMathjaxIfNeeded();} );
+  </script> 
+</head>
+<body>
+	
+	
+	
+
+<div class="jumbotron text-center">
+    <div class="container">
+       	<h1>Open Statistics</h1>
+        <a type="button" class="btn btn-lg btn-default" href="/"></span>Home</a>
+    </div>
+</div>
+<div class="container">	
+	<p><a href="confidence-interval-summary.html">Confidence Interval Summary</a></p>
+	</div>
