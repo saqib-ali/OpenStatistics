@@ -64,7 +64,6 @@
     </div>
   </div>
   <div class="container">
-    <h1>Confidence Interval</h1>
     <table class="table">
       <thead>
         <tr>
@@ -77,13 +76,9 @@
       <tbody>
         <tr>
           <td>
+            Sample Size Calculation:
             <math display='block'>
               <mtable columnalign='left'>
-                <mtr>
-                  <mtd>
-                    <mtext>Sample&#x00A0;Size&#x00A0;(n)&#x00A0;Calculation</mtext>
-                  </mtd>
-                </mtr>
                 <mtr>
                   <mtd>
                     <mi>n</mi>
@@ -117,15 +112,54 @@
               </mtable>
 
             </math>
+            Degrees of freedom = n-1
+
+            <br /><br />
+            CI:
+            <math display='block'>
+              <mrow>
+                <mover accent='true'>
+                  <mi>x</mi>
+                  <mo stretchy='true'>&#x00AF;</mo>
+                </mover>
+                <mo>&#x00B1;</mo>
+                <msub>
+                  <mi>t</mi>
+                  <mrow>
+                    <mfrac>
+                      <mi>&#x03B1;</mi>
+                      <mn>2</mn>
+                    </mfrac>
+                  </mrow>
+                </msub>
+                <mo>&#x00D7;</mo>
+                <mfrac>
+                  <mi>s</mi>
+                  <mrow>
+                    <msqrt>
+                      <mi>n</mi>
+                    </msqrt>
+                  </mrow>
+                </mfrac>
+              </mrow>
+            </math>
 
 
-</td>
 
-<td>
-  This is a test</td>
-</tr>
+
+          </td>
+
+          <td>
+            This is a test</td>
+        </tr>
 
       </tbody>
+
+      <thead>
+        <tr><th colspan=2> Hypothesis Testing</th></tr>
+        <tr><th>2 - Mean Independent Unpooled</th><th>2 Mean Independent Pooled</th></tr>
+      </thead>
+      
     </table>
 
 
