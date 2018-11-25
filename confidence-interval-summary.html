@@ -16,6 +16,7 @@
     Function based on code from
     https://github.com/mathjax/MathJax/issues/182
 */
+
  function isMathMLNativelySupported(){
       var hasMathML = false;
       if (document.createElement) {
@@ -29,9 +30,9 @@
     }
       return hasMathML;
   }
-  
+
   function setupMathjaxIfNeeded(){
-  	if( isMathMLNativelySupported() ) 
+  	if( isMathMLNativelySupported() )
 		return true;
     var scriptMathJax = document.createElement("script");
     scriptMathJax.type = "text/javascript";
@@ -40,12 +41,13 @@
     return false;
   }
   $( document ).ready( function(){setupMathjaxIfNeeded();} );
-  </script> 
+  </script>
 </head>
 <body>
-	
-	
-	
+  
+
+
+
 
 <div class="jumbotron text-center">
     <div class="container">
@@ -53,6 +55,6 @@
         <a type="button" class="btn btn-lg btn-default" href="/"></span>Home</a>
     </div>
 </div>
-<div class="container">	
+<div class="container">
 	<p><a href="confidence-interval-summary.html">Confidence Interval Summary</a></p>
 	</div>
