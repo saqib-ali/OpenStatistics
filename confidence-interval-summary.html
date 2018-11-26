@@ -71,7 +71,7 @@
     <table class="table">
       <thead>
         <tr>
-          <th colspan=2>Confidence Interval</th>
+          <th colspan=2>Sample Size Calculation</th>
         </tr>
         <tr>
           <th>One Mean</th>
@@ -80,7 +80,6 @@
       <tbody>
         <tr>
           <td>
-            Sample Size Calculation:
             <math display='block'>
               <mtable columnalign='left'>
                 <mtr>
@@ -116,69 +115,150 @@
               </mtable>
 
             </math>
-            Degrees of freedom = n-1
 
-            <br /><br />
-            CI:
+
+          </td>
+
+          <td>
             <math display='block'>
               <mrow>
-                <mover accent='true'>
-                  <mi>x</mi>
-                  <mo stretchy='true'>&#x00AF;</mo>
-                </mover>
-                <mo>&#x00B1;</mo>
-                <msub>
-                  <mi>t</mi>
-                  <mrow>
-                    <mfrac>
-                      <mi>&#x03B1;</mi>
-                      <mn>2</mn>
-                    </mfrac>
-                  </mrow>
-                </msub>
-                <mo>&#x00D7;</mo>
+                <mi>n</mi>
+                <mo>=</mo>
                 <mfrac>
-                  <mi>s</mi>
                   <mrow>
-                    <msqrt>
-                      <mi>n</mi>
-                    </msqrt>
+                    <msup>
+                      <mrow>
+                        <mfenced>
+                          <mrow>
+                            <msub>
+                              <mi>Z</mi>
+                              <mrow>
+                                <mfrac>
+                                  <mi>&#x03B1;</mi>
+                                  <mn>2</mn>
+                                </mfrac>
+                              </mrow>
+                            </msub>
+                          </mrow>
+                        </mfenced>
+                      </mrow>
+                      <mn>2</mn>
+                    </msup>
+                    <mo>&#x00D7;</mo>
+                    <mn>0.5</mn>
+                    <mo>&#x00D7;</mo>
+                    <mn>0.5</mn>
+                  </mrow>
+                  <mrow>
+                    <msup>
+                      <mi>E</mi>
+                      <mn>2</mn>
+                    </msup>
                   </mrow>
                 </mfrac>
               </mrow>
             </math>
 
 
-
           </td>
-
-          <td>
-            This is a test</td>
         </tr>
 
       </tbody>
 
       <thead>
         <tr>
-          <th colspan=2> Hypothesis Testing</th>
+          <th colspan=2>Confidence Interval</th>
         </tr>
         <tr>
-          <th>2 - Mean Independent Unpooled</th>
-          <th>2 Mean Independent Pooled</th>
+          <th>One Mean</th>
+          <th>One Proportion</th>
         </tr>
       </thead>
+      <tr>
+        <td>
+
+          <math display='block'>
+           <mrow>
+            <mover accent='true'>
+             <mi>x</mi>
+             <mo>&#x00AF;</mo>
+            </mover>
+            <mo>&#x00B1;</mo><msub>
+             <mi>t</mi>
+             <mrow>
+              <mfrac bevelled='true'>
+               <mi>&#x03B1;</mi>
+               <mn>2</mn>
+              </mfrac>
+              </mrow>
+            </msub>
+            <mo>&#x00D7;</mo><mfrac>
+             <mi>s</mi>
+             <mrow>
+              <msqrt>
+               <mi>n</mi>
+              </msqrt>
+              </mrow>
+            </mfrac>
+            </mrow>
+          </math>
+
+          <p>Degrees of freedom = n-1</p>
+
+
+        </td>
+
+        <td>
+          <math display='block'>
+ <mrow>
+  <mover accent='true'>
+   <mi>p</mi>
+   <mo>&#x005E;</mo>
+  </mover>
+  <mo>&#x00B1;</mo><msub>
+   <mi>Z</mi>
+   <mrow>
+    <mfrac bevelled='true'>
+     <mi>&#x03B1;</mi>
+     <mn>2</mn>
+    </mfrac>
+    </mrow>
+  </msub>
+  <msqrt>
+   <mrow>
+    <mfrac>
+     <mrow>
+      <mover accent='true'>
+       <mi>p</mi>
+       <mo>&#x005E;</mo>
+      </mover>
+      <mo>&#x00D7;</mo><mo stretchy='false'>(</mo><mn>1</mn><mo>&#x2212;</mo><mover accent='true'>
+       <mi>p</mi>
+       <mo>&#x005E;</mo>
+      </mover>
+      </mrow>
+     <mi>n</mi>
+    </mfrac>
+    </mrow>
+  </msqrt>
+  </mrow>
+</math>
+
+        </td>
+
+      </tr>
 
 
     </table>
 
 
   </div>
-<!-- Begin Footer-->
+  <!-- Begin Footer-->
   <div class="alert alert-secondary text-center" role="alert">
     <p>Hosted on <a href="https://github.com/saqib-ali/OpenStatistics">github.</a></p>
     <p>To collaborate on this project, please email <a href="mailto:saqibali2@yahoo.com">saqibali2@yahoo.com</a></p>
   </div>
 
-<!-- End Footer-->
+  <!-- End Footer-->
 
 </body>
